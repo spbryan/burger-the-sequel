@@ -4,11 +4,10 @@ _This site allows you to push a burger through its lifecycle in its entirety.  U
 
 ## Application Organization
 The application is organized with separate js files defined for each perspective:
-* __config/connection.js__ - Create the connection to the corresponding MySQL table
-* __config/orm.js__ - Provides the methods to drive the SQL statements to manipulate the table entries.
-* __controllers/burgers_controller.js__ - Provides the router functionality to drive the CRUD actions based on the specific router path.
-* __models/burger.js__ - Model entity with the methods to the corresponding orm CRUD methods.
+* __models/index.js__ - Boilerplate code in support of sequelizer
+* __models/burger.js__ - Model entity with the corresponding data base definition
 * __public/assets/js/burgers.js__ - Javascript to handle events from the index
+* __routes/api-routes__ - Defines CRUD behavior for corrspoinding http calls
 * __server.js__ - Handles express configurations and server settings.
 * __main.handlebars__ - Handles display for home page.
 * __index.handlebars__ - Handles dispaly for main view including an entry form for the burger details and buttons to transition the burger through the phases.
@@ -21,12 +20,13 @@ https://stormy-thicket-59801.herokuapp.com/
 * Digest-Da-Burger: User selects the burger entry that they want to remove and clicks the corresponding "Burp!" button.  This removes the entry from both the data base and the view.
 
 ## Technology
-This application was written in JavaScript on NodeJs using Express, Handlebars, and MySQL. 
+This application was written in JavaScript on NodeJs using Express, Handlebars, and Sequelizer. 
 
 __NPM Installs__
-* express: ^4.17.1
+* express: ^4.16.3
 * express-handlebars": ^3.1.0
-* mysql: ^2.17.1
+* mysql2: ^1.6.4
+* sequelize: ^4.41.2
 
 ## Development Role
 Application designed and developed by Sean Bryan as part of a homework assignment for the UNH Full Stack Boot Camp.

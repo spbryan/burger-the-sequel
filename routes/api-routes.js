@@ -27,7 +27,6 @@ module.exports = function (app) {
             devoured: false
         }).then(function (results) {
             res.redirect('back');
-            // res.json(results);
         });
     });
 
@@ -36,7 +35,6 @@ module.exports = function (app) {
         db.Burger.update({ devoured: true },
             { where: { id: req.params.id } })
             .then(function (results) {
-                // res.json(results);
                 if (results.changedRows == 0) {
                     return res.status(404).end();
                 } else {
@@ -52,7 +50,6 @@ module.exports = function (app) {
                 id: req.params.id
             }
         }).then(function (result) {
-            // res.end();
             if (result.affectedRows == 0) {
                 return res.status(404).end();
             } else {

@@ -1,7 +1,7 @@
 /***********************************************
- * Project: Burger
+ * Project: Burger The Sequel
  * Developer: Sean Bryan
- * Date: 2019-06-26
+ * Date: 2019-07-01
  ***********************************************/
 $(function () {
     $(".eat-burger").on("click", function (event) {

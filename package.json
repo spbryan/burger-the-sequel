@@ -4,7 +4,8 @@
   "description": "_An \"date site\" like application that uses express to create an application that allows users to enter survey information and returns a \"match\" from an internal array of objects_",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
